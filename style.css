@@ -1,0 +1,144 @@
+/* ---Google Fonts--- */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* font-family: "Playfair Display", serif; */
+}
+
+/* ---Typography--- */
+.text-style-1 {
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: #094b72;
+  font-family: "Playfair Display", serif;
+}
+.text-style-2 {
+  margin: 1rem 0rem;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 158%;
+  letter-spacing: 0.5px;
+  color: #4f4f4f;
+  font-family: "Plus Jakarta Sans";
+}
+.text-style-3 {
+  font-family: "Plus Jakarta Sans";
+  font-size: 22px;
+  line-height: 140.5%;
+  letter-spacing: 0.04em;
+  color: #8b8c8c;
+  margin: 2rem 0rem;
+}
+
+/* ----------Responsive Image------ */
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* ---navbar--- */
+.navbar {
+  font-family: Poppins;
+  font-style: normal;
+  padding: 1rem;
+}
+.brand-logo {
+  width: 36px;
+  height: 36px;
+  background-color: #094b72;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 0.5rem;
+  line-height: 12px;
+}
+.navbar-brand {
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 1.5px;
+  color: #2d2f30;
+  mix-blend-mode: normal;
+}
+.navbar-nav li {
+  margin: 0rem 1rem;
+  font-size: 12px;
+  line-height: 23px;
+  letter-spacing: 1.5px;
+  color: #2d2f30;
+}
+
+/* --button-- */
+.btn {
+  width: 200px;
+  height: 60px;
+  background: #094b72;
+  border-radius: 8px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 140.5%;
+  letter-spacing: 0.08em;
+  margin: 1rem 0rem;
+  color: #f9f8f9;
+}
+
+/* ====================main part================ */
+
+/* -----------------introduction Section-------------- */
+.introduction {
+  position: relative;
+  background: #f9f8f9;
+}
+.introduction .container {
+  padding-top: 10rem;
+}
+.introduction .container,
+.introduction__brands {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.introduction-content-area {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+.introduction-img img {
+  margin-top: -35%;
+}
+
+@media all and (max-width: 425px) {
+  .introduction .container {
+    padding-top: 5rem;
+  }
+  /* --Typograpy-- */
+  .text-style-1 {
+    font-size: 2.5rem;
+  }
+  .text-style-1,
+  .text-style-2,
+  .text-style-3 {
+    text-align: center;
+  }
+  /* --Button-- */
+  .btn__container {
+    text-align: center;
+  }
+  .introduction .container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+  }
+  .introduction__brands img {
+    display: block;
+    margin: 0 auto;
+  }
+  .introduction-img img {
+    margin-top: -12rem;
+  }
+}
